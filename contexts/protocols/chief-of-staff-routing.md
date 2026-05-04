@@ -18,14 +18,15 @@ Classify each request into exactly one primary route:
 ## Default Flow
 
 1. Run Superpowers skill gate.
-2. Load permanent context and relevant project context.
-3. Classify the request.
-4. Decide whether approval is needed.
-5. Choose agent route.
-6. Execute, delegate, or ask the smallest necessary question.
-7. Verify.
-8. Log learnings if something failed.
-9. Update memory candidates.
+2. Run `workflows/chief-of-staff-memory-retrieval.md` for high-context work.
+3. Load permanent context and relevant project context.
+4. Classify the request.
+5. Decide whether approval is needed.
+6. Choose agent route.
+7. Execute, delegate, or ask the smallest necessary question.
+8. Verify.
+9. Log learnings if something failed.
+10. Promote durable memory through Graphify when appropriate.
 
 ## Agent Routing
 

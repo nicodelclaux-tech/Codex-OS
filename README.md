@@ -12,6 +12,7 @@ This repo is intentionally infrastructure-shaped rather than app-shaped. It give
 - Project-specific agent systems live in `Projects/`.
 - Graph memory lives in `memory/graph/` as versioned JSONL and schema files.
 - Failures and corrections are captured in `memory/learnings_log/`.
+- Graphify is the canonical memory layer; see `docs/graphify-memory-architecture.md`.
 - Self-improvement loops live in `loops/`.
 - Installed and recommended Codex skills are tracked in `skills/`.
 - Integrations are declared in `integrations/` before being wired into MCP, GitHub, calendar, inbox, browser, or local tools.

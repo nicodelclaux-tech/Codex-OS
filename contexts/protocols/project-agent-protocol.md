@@ -27,4 +27,6 @@ Each project under `Projects/` can define its own agent rules while inheriting g
 - Store raw project notes in `Projects/<project>/memory/journal.md`.
 - Store durable project facts in `Projects/<project>/memory/project-memory.jsonl`.
 - Promote only cross-project lessons to root `memory/graph/`.
+- Keep project memory Graphify-compatible: source, confidence, sensitivity, timestamp, and tags are required for durable entries.
+- Use `workflows/graphify-promotion.md` when promoting project notes into durable memory.
 

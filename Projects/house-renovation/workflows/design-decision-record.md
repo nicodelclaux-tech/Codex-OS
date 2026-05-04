@@ -21,3 +21,5 @@ Use before committing to a material, fixture, layout, color palette, contractor 
 
 Do not treat a design preference as final until it is captured as a decision record or explicitly marked as exploratory.
 
+Approved decisions should be promoted into `Projects/house-renovation/memory/project-memory.jsonl` as Graphify-compatible events.
+

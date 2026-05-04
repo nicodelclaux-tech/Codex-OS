@@ -9,6 +9,7 @@ This project manages house renovation, interior design, sourcing, planning, trad
 - Track budget, quotes, vendors, and timelines.
 - Preserve design intent across decisions.
 - Reduce rework by making constraints explicit.
+- Promote stable project facts through Graphify-compatible project memory.
 
 ## Project Agents
 

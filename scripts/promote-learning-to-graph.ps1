@@ -1,9 +1,8 @@
 param(
-  [Parameter(Mandatory=$true)][string]$Type,
-  [Parameter(Mandatory=$true)][string]$Subject,
+  [Parameter(Mandatory=$true)][string]$LearningId,
   [Parameter(Mandatory=$true)][string]$Summary,
-  [string]$Source = "manual",
-  [double]$Confidence = 0.7,
+  [string]$Subject = "system:codex-os",
+  [double]$Confidence = 0.8,
   [string]$Sensitivity = "personal"
 )
 
@@ -13,18 +12,17 @@ $IdDate = Get-Date -Format "yyyy-MM-dd-HHmmss"
 $CreatedAt = (Get-Date).ToUniversalTime().ToString("o")
 
 $Event = [ordered]@{
-  id = "evt-$IdDate"
-  type = $Type
+  id = "evt-learning-$IdDate"
+  type = "decision"
   subject = $Subject
   summary = $Summary
-  source = $Source
+  source = "memory/learnings_log/$LearningId"
   confidence = $Confidence
   sensitivity = $Sensitivity
   created_at = $CreatedAt
-  tags = @("manual")
+  tags = @("learning", "graphify")
 }
 
 $Json = $Event | ConvertTo-Json -Compress
 Add-Content -Path $Events -Value $Json -ErrorAction Stop
-Write-Output "Appended memory event to $Events"
-
+Write-Output "Promoted learning $LearningId to $Events"
