@@ -8,6 +8,6 @@ node_modules/
 .venv/
 dist/
 build/
+.worktrees/
 .DS_Store
 Thumbs.db
-
