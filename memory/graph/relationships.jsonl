@@ -1,0 +1,3 @@
+{"from":"user:nico","to":"system:codex-os","type":"owns","source":"bootstrap","confidence":1.0}
+{"from":"system:codex-os","to":"agent:chief-of-staff","type":"coordinates_with","source":"bootstrap","confidence":0.9}
+

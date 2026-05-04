@@ -1,0 +1,16 @@
+[codex_os]
+name = "Codex-OS"
+mode = "local-first"
+memory_root = "memory"
+context_root = "contexts"
+agent_root = "agents"
+
+[protocols]
+approval = "contexts/protocols/approval-protocol.md"
+permanent_context = "contexts/protocols/permanent-context-protocol.md"
+
+[loops]
+daily = "loops/daily-review.md"
+weekly = "loops/weekly-retrospective.md"
+self_improvement = "loops/self-improvement.md"
+

@@ -1,0 +1,17 @@
+{
+  "entities": [
+    {
+      "id": "user:nico",
+      "type": "person",
+      "name": "Nico",
+      "description": "Owner and operator of Codex-OS"
+    },
+    {
+      "id": "system:codex-os",
+      "type": "system",
+      "name": "Codex-OS",
+      "description": "Personal OS scaffold for Codex agents, memory, skills, and protocols"
+    }
+  ]
+}
+
