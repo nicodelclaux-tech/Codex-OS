@@ -9,7 +9,9 @@ This repo is intentionally infrastructure-shaped rather than app-shaped. It give
 - Permanent context lives in `contexts/permanent/`.
 - Operating protocols live in `contexts/protocols/`.
 - Agents and sub-agents are plain Markdown contracts in `agents/`.
+- Project-specific agent systems live in `Projects/`.
 - Graph memory lives in `memory/graph/` as versioned JSONL and schema files.
+- Failures and corrections are captured in `memory/learnings_log/`.
 - Self-improvement loops live in `loops/`.
 - Installed and recommended Codex skills are tracked in `skills/`.
 - Integrations are declared in `integrations/` before being wired into MCP, GitHub, calendar, inbox, browser, or local tools.
@@ -21,6 +23,7 @@ This repo is intentionally infrastructure-shaped rather than app-shaped. It give
 3. Run the bootstrap checklist in `ops/bootstrap.md`.
 4. Use `scripts/daily-review.ps1` to generate a daily operating note.
 5. Use `scripts/graphify.ps1` to append structured memories into `memory/graph/events.jsonl`.
+6. Use `scripts/log-learning.ps1` whenever an agent failure or user correction should become a future lesson.
 
 ## Design Targets
 
@@ -30,8 +33,8 @@ This repo is intentionally infrastructure-shaped rather than app-shaped. It give
 - Persistent memory, but only after reflection.
 - Sub-agents with tight scopes and auditable outputs.
 - Self-improvement through review loops, not hidden mutation.
+- Superpowers skill gate before every command.
 
 ## Inspiration
 
 This scaffold borrows product patterns from agentic workspaces such as CoWork OS and OpenLoaf, second-brain patterns from Khoj, and workspace primitives from AppFlowy. The implementation here is your own system layer for Codex.
-

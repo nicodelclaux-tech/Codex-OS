@@ -9,6 +9,7 @@ Permanent context is the stable layer Codex can rely on across projects.
 - `memory/graph/entities.json`
 - `memory/graph/events.jsonl`
 - `memory/graph/relationships.jsonl`
+- `memory/learnings_log/`
 
 ## Promotion Rules
 
@@ -25,3 +26,6 @@ A memory can be promoted when it is:
 - Weekly: promote stable lessons to graph memory.
 - Monthly: prune stale assumptions and dead protocols.
 
+## Learning Promotion
+
+Learning log entries are not automatically permanent preferences. Promote them only when they reveal a reusable operating rule, then link the promoted graph event back to the learning ID.

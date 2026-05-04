@@ -8,9 +8,19 @@ agent_root = "agents"
 [protocols]
 approval = "contexts/protocols/approval-protocol.md"
 permanent_context = "contexts/protocols/permanent-context-protocol.md"
+agent_sop = "contexts/protocols/agent-sop.md"
+superpowers = "contexts/protocols/superpowers-protocol.md"
+chief_of_staff_routing = "contexts/protocols/chief-of-staff-routing.md"
+project_agent_protocol = "contexts/protocols/project-agent-protocol.md"
 
 [loops]
 daily = "loops/daily-review.md"
 weekly = "loops/weekly-retrospective.md"
 self_improvement = "loops/self-improvement.md"
 
+[memory]
+graph_schema = "memory/graph/schema.json"
+learnings_log = "memory/learnings_log"
+
+[projects]
+root = "Projects"
